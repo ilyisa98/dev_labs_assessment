@@ -1,0 +1,215 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'node',
+1 verbose cli   '-g',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.0
+4 verbose install initial load of C:\Users\user\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\user\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'node', null ]
+7 verbose cache add spec node
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'node',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'node',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed node@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for node
+11 info addNameTag [ 'node', 'latest' ]
+12 silly mapToRegistry name node
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'node',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'node',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/node
+17 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/node
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 3:44:57 AM
+21 verbose request id a38ef6a0ad1cd9b8
+22 http request GET https://registry.npmjs.org/node
+23 http 200 https://registry.npmjs.org/node
+24 verbose headers { date: 'Sun, 14 Oct 2018 01:45:01 GMT',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'transfer-encoding': 'chunked',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'set-cookie': [ '__cfduid=d065aa8fa54901e2de3082728f900f7631539481499; expires=Mon, 14-Oct-19 01:44:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+24 verbose headers   'cf-cache-status': 'MISS',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'cf-ray': '46965d2958a58046-CPT',
+24 verbose headers   etag: 'W/"9be87f069fd0a752cb652fb47b1442f3"',
+24 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 verbose headers   'last-modified': 'Sat, 13 Oct 2018 01:01:26 GMT',
+24 verbose headers   vary: 'accept-encoding, accept',
+24 verbose headers   'x-amz-meta-rev': '433-b8f86a3b9c1c7c92b52358e5d249f786',
+24 verbose headers   server: 'cloudflare',
+24 verbose headers   'content-encoding': 'gzip' }
+25 silly get cb [ 200,
+25 silly get   { date: 'Sun, 14 Oct 2018 01:45:01 GMT',
+25 silly get     'content-type': 'application/json',
+25 silly get     'transfer-encoding': 'chunked',
+25 silly get     connection: 'keep-alive',
+25 silly get     'set-cookie': [ '__cfduid=d065aa8fa54901e2de3082728f900f7631539481499; expires=Mon, 14-Oct-19 01:44:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+25 silly get     'cf-cache-status': 'MISS',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'cf-ray': '46965d2958a58046-CPT',
+25 silly get     etag: 'W/"9be87f069fd0a752cb652fb47b1442f3"',
+25 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+25 silly get     'last-modified': 'Sat, 13 Oct 2018 01:01:26 GMT',
+25 silly get     vary: 'accept-encoding, accept',
+25 silly get     'x-amz-meta-rev': '433-b8f86a3b9c1c7c92b52358e5d249f786',
+25 silly get     server: 'cloudflare',
+25 silly get     'content-encoding': 'gzip' } ]
+26 verbose get saving node to C:\Users\user\AppData\Roaming\npm-cache\registry.npmjs.org\node\.cache.json
+27 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+28 silly addNameTag next cb for node with tag latest
+29 silly addNamed node@10.12.0
+30 verbose addNamed "10.12.0" is a plain semver version for node
+31 silly mapToRegistry name node
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry data Result {
+34 silly mapToRegistry   raw: 'node',
+34 silly mapToRegistry   scope: null,
+34 silly mapToRegistry   name: 'node',
+34 silly mapToRegistry   rawSpec: '',
+34 silly mapToRegistry   spec: 'latest',
+34 silly mapToRegistry   type: 'tag' }
+35 silly mapToRegistry uri https://registry.npmjs.org/node
+36 verbose addRemoteTarball https://registry.npmjs.org/node/-/node-10.12.0.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-10.12.0.tgz',
+37 verbose addRemoteTarball   '72dbd553b9fc7550a66e774b89c71c34435e2e08' ]
+38 info retry fetch attempt 1 at 3:45:04 AM
+39 info attempt registry request try #1 at 3:45:04 AM
+40 http fetch GET https://registry.npmjs.org/node/-/node-10.12.0.tgz
+41 http fetch 200 https://registry.npmjs.org/node/-/node-10.12.0.tgz
+42 silly fetchAndShaCheck shasum 72dbd553b9fc7550a66e774b89c71c34435e2e08
+43 verbose addTmpTarball C:\Users\user\AppData\Local\Temp\npm-5820-890ad6c0\registry.npmjs.org\node\-\node-10.12.0.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for node@10.12.0
+45 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+46 silly cache afterAdd node@10.12.0
+47 verbose afterAdd C:\Users\user\AppData\Roaming\npm-cache\node\10.12.0\package\package.json not in flight; writing
+48 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+49 verbose afterAdd C:\Users\user\AppData\Roaming\npm-cache\node\10.12.0\package\package.json written
+50 silly install resolved [ { name: 'node',
+50 silly install resolved     version: '10.12.0',
+50 silly install resolved     description: 'node',
+50 silly install resolved     main: 'index.js',
+50 silly install resolved     keywords: [ 'runtime' ],
+50 silly install resolved     repository:
+50 silly install resolved      { type: 'git',
+50 silly install resolved        url: 'git+https://github.com/aredridel/node-bin-gen.git' },
+50 silly install resolved     scripts: { preinstall: 'node installArchSpecificPackage' },
+50 silly install resolved     bin: { node: 'bin/node' },
+50 silly install resolved     dependencies: { 'node-bin-setup': '^1.0.0' },
+50 silly install resolved     license: 'ISC',
+50 silly install resolved     author: '',
+50 silly install resolved     engines: { npm: '>=5.0.0' },
+50 silly install resolved     bugs: { url: 'https://github.com/aredridel/node-bin-gen/issues' },
+50 silly install resolved     homepage: 'https://github.com/aredridel/node-bin-gen#readme',
+50 silly install resolved     _id: 'node@10.12.0',
+50 silly install resolved     _npmVersion: '6.4.1',
+50 silly install resolved     _nodeVersion: '10.9.0',
+50 silly install resolved     _npmUser: { name: 'aredridel', email: 'aredridel@dinhe.net' },
+50 silly install resolved     dist:
+50 silly install resolved      { integrity: 'sha512-PJy1yLeYS9bYoYora/9jIQSUBCkw1XCS3AfMIYCJJVKq2xyLmDLyHv1rYDwNxXdkjoJusPQoW65H1gvrxQNq+Q==',
+50 silly install resolved        shasum: '72dbd553b9fc7550a66e774b89c71c34435e2e08',
+50 silly install resolved        tarball: 'https://registry.npmjs.org/node/-/node-10.12.0.tgz',
+50 silly install resolved        fileCount: 3,
+50 silly install resolved        unpackedSize: 1477,
+50 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbwUPiCRA9TVsSAnZWagAA24wQAI1bogF5K8sonSE+Fj6+\n3SumlG+UOpCwRzRRltBlPCpqUwjP1nNCAg5O954WaAOztdmMDhfg0siNL589\n6dX+qUnisiRda8Byg857MbkHdNCvKxYzAgqnBPlnq59UiKZqSFoRYzs47bE9\nXZ8JRSw+eLgMZj3vmntiCHOq66o2i8YAhnvdAzp1UX7A6oBA9C8UPXPiVFRs\nJDDdAE302uJOH+Urvg9xvpEIaT34eJN/wqcqFrU02bk5E707Z7g0zWXhzk/o\nUZwbjELYDcKiMwjo9S8bjBv9kGocHqCTmnuhGma/0HcksJEMyDXVapKZqarG\neAb5IqfhIIaAfOz/lnFxwND2zWvPHeCU52sS92HGFv9kra/WgL7OMKEyqGxW\nVCqMZ3fnPMY6PgYJzM3BRVV42eIjiN7s2nHK9SoFi8zWy3hKlVM9samABvRf\nMnl7A+TQaH6y6DV/Bs2QBaL0TsJdQs/IdaSvSyXUoxQXLlTRzKRY+K2YRjdM\n+061N7nxpPk5nG54vdm0Rvx4D1IMzNZHaCsaR3uzj9vjxWLK9ggCMobBqgAt\nFT9cRt0hG/obpxucNrOqb33T5AIWa3z5CFBxoxqF1HJZAP1ugVYsXc2x3m2V\nEtEJ2mnh6WKjJgDOeceogtXfkSu7Ws4sWdBmZgkM5tMcpZBL/8uvfjW8nVGK\no0SD\r\n=MDK/\r\n-----END PGP SIGNATURE-----\r\n' },
+50 silly install resolved     maintainers: [ [Object], [Object] ],
+50 silly install resolved     directories: {},
+50 silly install resolved     _npmOperationalInternal:
+50 silly install resolved      { host: 's3://npm-registry-packages',
+50 silly install resolved        tmp: 'tmp/node_10.12.0_1539392482063_0.42359824728066364' },
+50 silly install resolved     _hasShrinkwrap: false,
+50 silly install resolved     _shasum: '72dbd553b9fc7550a66e774b89c71c34435e2e08',
+50 silly install resolved     _resolved: 'https://registry.npmjs.org/node/-/node-10.12.0.tgz',
+50 silly install resolved     _from: 'node@latest' } ]
+51 info install node@10.12.0 into C:\Users\user\AppData\Roaming\npm
+52 info installOne node@10.12.0
+53 verbose installOne of node to C:\Users\user\AppData\Roaming\npm not in flight; installing
+54 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+55 verbose lock using C:\Users\user\AppData\Roaming\npm-cache\_locks\node-033c3bcb54a7b1b6.lock for C:\Users\user\AppData\Roaming\npm\node_modules\node
+56 warn engine node@10.12.0: wanted: {"npm":">=5.0.0"} (current: {"node":"4.6.0","npm":"2.15.9"})
+57 silly install write writing node 10.12.0 to C:\Users\user\AppData\Roaming\npm\node_modules\node
+58 verbose unbuild node_modules\node
+59 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node_modules\node is being purged from base C:\Users\user\AppData\Roaming\npm
+60 verbose gentlyRm don't care about contents; nuking C:\Users\user\AppData\Roaming\npm\node_modules\node
+61 verbose tar unpack C:\Users\user\AppData\Roaming\npm-cache\node\10.12.0\package.tgz
+62 verbose tar unpacking to C:\Users\user\AppData\Roaming\npm\node_modules\node
+63 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node_modules\node is being purged
+64 verbose gentlyRm don't care about contents; nuking C:\Users\user\AppData\Roaming\npm\node_modules\node
+65 silly gunzTarPerm modes [ '777', '666' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+68 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+69 silly gunzTarPerm modified mode [ 'installArchSpecificPackage.js', 420, 438 ]
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+72 verbose write writing to C:\Users\user\AppData\Roaming\npm\node_modules\node\package.json
+73 info preinstall node@10.12.0
+74 verbose unsafe-perm in lifecycle true
+75 info node@10.12.0 Failed to exec preinstall script
+76 verbose unlock done using C:\Users\user\AppData\Roaming\npm-cache\_locks\node-033c3bcb54a7b1b6.lock for C:\Users\user\AppData\Roaming\npm\node_modules\node
+77 verbose stack Error: node@10.12.0 preinstall: `node installArchSpecificPackage`
+77 verbose stack Exit status 1
+77 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
+77 verbose stack     at emitTwo (events.js:87:13)
+77 verbose stack     at EventEmitter.emit (events.js:172:7)
+77 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+77 verbose stack     at emitTwo (events.js:87:13)
+77 verbose stack     at ChildProcess.emit (events.js:172:7)
+77 verbose stack     at maybeClose (internal/child_process.js:829:16)
+77 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+78 verbose pkgid node@10.12.0
+79 verbose cwd C:\Users\user\Desktop\Dev_Labs
+80 error Windows_NT 6.1.7601
+81 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "node" "-g" "--save"
+82 error node v4.6.0
+83 error npm  v2.15.9
+84 error code ELIFECYCLE
+85 error node@10.12.0 preinstall: `node installArchSpecificPackage`
+85 error Exit status 1
+86 error Failed at the node@10.12.0 preinstall script 'node installArchSpecificPackage'.
+86 error This is most likely a problem with the node package,
+86 error not with npm itself.
+86 error Tell the author that this fails on your system:
+86 error     node installArchSpecificPackage
+86 error You can get information on how to open an issue for this project with:
+86 error     npm bugs node
+86 error Or if that isn't available, you can get their info via:
+86 error
+86 error     npm owner ls node
+86 error There is likely additional logging output above.
+87 verbose exit [ 1, true ]
+88 verbose unbuild node_modules\node
+89 info preuninstall node@10.12.0
+90 info uninstall node@10.12.0
+91 verbose unbuild rmStuff node@10.12.0 from C:\Users\user\AppData\Roaming\npm\node_modules
+92 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node.cmd is being gently removed
+93 silly gentlyRm verifying C:\Users\user\AppData\Roaming\npm is an npm working directory
+94 silly gentlyRm containing path C:\Users\user\AppData\Roaming\npm is under npm's control, in C:\Users\user\AppData\Roaming\npm
+95 silly gentlyRm deletion target C:\Users\user\AppData\Roaming\npm\node.cmd is under C:\Users\user\AppData\Roaming\npm
+96 verbose gentlyRm vacuuming from C:\Users\user\AppData\Roaming\npm\node.cmd up to C:\Users\user\AppData\Roaming\npm
+97 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node is being gently removed
+98 silly gentlyRm verifying C:\Users\user\AppData\Roaming\npm is an npm working directory
+99 silly gentlyRm containing path C:\Users\user\AppData\Roaming\npm is under npm's control, in C:\Users\user\AppData\Roaming\npm
+100 silly gentlyRm deletion target C:\Users\user\AppData\Roaming\npm\node is under C:\Users\user\AppData\Roaming\npm
+101 verbose gentlyRm vacuuming from C:\Users\user\AppData\Roaming\npm\node up to C:\Users\user\AppData\Roaming\npm
+102 info postuninstall node@10.12.0
+103 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node_modules\node is being purged from base C:\Users\user\AppData\Roaming\npm
+104 verbose gentlyRm don't care about contents; nuking C:\Users\user\AppData\Roaming\npm\node_modules\node
+105 silly vacuum-fs purging C:\Users\user\AppData\Roaming\npm\node_modules\node
+106 silly vacuum-fs quitting because other entries in C:\Users\user\AppData\Roaming\npm\node_modules

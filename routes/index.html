@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+</head>
+<body>
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/user">
+        <label>Name:<input type="text" name="client-name" id="name" required></label>
+        <br>
+        <label>Email:<input type="email" name="client-email" required></label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <input type="button" value="add name to db" onclick="check()">
+     <script>
+ //bonus task
+     let users = ["John", "May", "Fam"];
+
+        function check(){
+
+          var name = document.getElementById("name").value;
+          console.log(users);
+
+          //search array
+          var found = users.includes(name);
+
+          //array limits to 10 names
+          if(users.length == 10){
+           found = "true";
+          }
+
+          if(found === false){
+           //add name to db
+           users.push(name);
+
+         }
+       else {
+
+       }
+     };
+     </script>
+</body>
+</html>
